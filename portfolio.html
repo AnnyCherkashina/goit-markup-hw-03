@@ -19,33 +19,34 @@
 <body>
     <!-- HEADER -->
     <header class="page-header">
-        <nav class="page-nav">
-            <a class="logo link" href="./index.html">Web<span class="company-name">Studio</span></a>
-            <!-- menu nav -->
-            <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link link" href="./index.html">Studio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- ADDRESS -->
-        <address class="header-address">
-            <ul class="address-header list">
-                <li class="address-list">
-                    <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="address">
-                    <a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
-
+        <div class="container container-header">
+            <nav class="page-navigation">
+                <a class="logo link" href="./index.html">Web <span class="company-name">Studio</span></a>
+                <!-- menu nav -->
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="menu-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- menu info -->
+            <address class="header-address">
+                <ul class="address-header list">
+                    <li class="address-list">
+                        <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="address">
+                        <a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
         <!-- section one -->
@@ -56,19 +57,19 @@
 
                 <ul class="section-title list">
                     <li>
-                        <button class="modal-button" type="button">All</button>
+                        <button class="modal-button-portfolio" type="button">All</button>
                     </li>
                     <li>
-                        <button class="modal-button" type="button">Web Site</button>
+                        <button class="modal-button-portfolio" type="button">Web Site</button>
                     </li>
                     <li>
-                        <button class="modal-button" type="button">App</button>
+                        <button class="modal-button-portfolio" type="button">App</button>
                     </li>
                     <li>
-                        <button class="modal-button" type="button">Design</button>
+                        <button class="modal-button-portfolio" type="button">Design</button>
                     </li>
                     <li>
-                        <button class="modal-button" type="button">Marketing</button>
+                        <button class="modal-button-portfolio" type="button">Marketing</button>
                     </li>
 
                 </ul>
@@ -77,65 +78,94 @@
                 <ul class="picture list">
 
 
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-one/banking.jpg" alt="bank tabs" width="360">
-                            <h2 class="name-pic">Banking App Interface Concept</h2>
-                            <p class="desc">App</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-one/banking.jpg" alt="bank tabs" width="360">
+                                <h2 class="name-pic">Banking App Interface Concept</h2>
+                                <p class="desc">App</p>
+                            </div>
                         </a>
                     </li>
 
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-one/cashless.jpg"
-                                alt="the phone displays the qr code" width="360">
-                            <h2 class="name-pic">Cashless Payment</h2>
-                            <p class="desc">Marketing</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-one/cashless.jpg"
+                                    alt="the phone displays the qr code" width="360">
+                                <h2 class="name-pic">Cashless Payment</h2>
+                                <p class="desc">Marketing</p>
+                            </div>
                         </a>
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-one/meditation.jpg" alt="computer" width="360">
-                            <h2 class="name-pic">Meditation App</h2>
-                            <p class="desc">App</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-one/meditation.jpg" alt="computer"
+                                    width="360">
+                                <h2 class="name-pic">Meditation App</h2>
+                                <p class="desc">App</p>
+                            </div>
                         </a>
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-two/taxi.jpg"
-                                alt="the window of the taxi driver's car" width="360">
-                            <h2 class="name-pic">Taxi Service</h2>
-                            <p class="desc">Marketing</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-two/taxi.jpg"
+                                    alt="the window of the taxi driver's car" width="360">
+                                <h2 class="name-pic">Taxi Service</h2>
+                                <p class="desc">Marketing</p>
+                            </div>
                         </a>
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-two/screen.jpg" alt="telephone" width="360">
-                            <h2 class="name-pic">Screen Illustrations</h2>
-                            <p class="desc">Design</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-two/screen.jpg" alt="telephone" width="360">
+                                <h2 class="name-pic">Screen Illustrations</h2>
+                                <p class="desc">Design</p>
+                            </div>
                         </a>
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-two/online-courses.jpg" alt="a girl with a phone"
-                                width="360">
-                            <h2 class="name-pic">Online Courses</h2>
-                            <p class="desc">Marketing</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-two/online-courses.jpg"
+                                    alt="a girl with a phone" width="360">
+                                <h2 class="name-pic">Online Courses</h2>
+                                <p class="desc">Marketing</p>
+                            </div>
                         </a>
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-three/instagram.jpg" alt="instagram page"
-                                width="360">
-                            <h2 class="name-pic">Instagram Stories Concept</h2>
-                            <p class="desc">Design</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-three/instagram.jpg" alt="instagram page"
+                                    width="360">
+                                <h2 class="name-pic">Instagram Stories Concept</h2>
+                                <p class="desc">Design</p>
+                            </div>
                         </a>
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-three/organic.jpg"
-                                alt="girl with a bag of groceries" width="360">
-                            <h2 class="name-pic">Organic Food</h2>
-                            <p class="desc">Web Site</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-three/organic.jpg"
+                                    alt="girl with a bag of groceries" width="360">
+                                <h2 class="name-pic">Organic Food</h2>
+                                <p class="desc">Web Site</p>
+                            </div>
                         </a>
+
                     </li>
-                    <li> <a href="" class="link">
-                            <img class="img-avatar" src="./images/row-three/fresh.jpg" alt="a cap of coffee"
-                                width="360">
-                            <h2 class="name-pic">Fresh Coffee</h2>
-                            <p class="desc">Web Site</p>
+                    <li class="picture-item">
+                        <a href="" class="picture-link link">
+                            <div class="caption container-section">
+                                <img class="img-avatar" src="./images/row-three/fresh.jpg" alt="a cap of coffee"
+                                    width="360">
+                                <h2 class="name-pic">Fresh Coffee</h2>
+                                <p class="desc">Web Site</p>
+                            </div>
                         </a>
                     </li>
 
@@ -147,11 +177,11 @@
     <!-- FOOTER -->
     <footer class="footer-blok">
         <div class="container">
-            <a class="logo link footer-blok" href="./portfolio.html">Web<span class="name-footer">Studio</span></a>
-            <p class="text-description footer-blok">Increase the flow of customers and sales for your business with
-                digital
-                marketing &
-                growth solutions.
+
+            <a class="logo-footer link" href="./index.html">Web <span class="company-footer">Studio</span></a>
+
+            <p class="text-description">Increase the flow of customers and sales for
+                your business with digital marketing & growth solutions.
             </p>
         </div>
     </footer>
