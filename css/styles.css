@@ -59,6 +59,10 @@ body {
 }
 
 /* ====HEADER==== */
+.container-stydio {
+    display: flex;
+}
+
 .page-header {
     border-bottom: 1px solid #e7e9fc;
 }
@@ -149,7 +153,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     padding-top: 24px;
-    padding-bottom: 24px
+    padding-bottom: 24px;
+
+
 }
 
 .menu-link:hover,
@@ -293,7 +299,7 @@ body {
     padding-bottom: 120px;
 }
 
-.visually-hidden {
+.hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -336,10 +342,6 @@ body {
     letter-spacing: 0.32px;
 }
 
-.item-subtitle-name-end {
-    margin-right: 0;
-}
-
 /*====section 3==== */
 .section-caption {
     padding-bottom: 120px;
@@ -366,11 +368,6 @@ body {
     width: calc((100%-48px)/3);
 }
 
-.caption-blok-end {
-    width: calc((100%-48px)/3);
-    margin-right: 0;
-}
-
 /*====/section 3==== */
 /*====section 4==== */
 .blok-caption {
@@ -386,7 +383,7 @@ body {
 }
 
 .card-caption {
-    background: var(--WHITE, #FFF);
+    background: var(--text-btn-color);
     padding-bottom: 0px;
     justify-content: center;
     width: calc((100%-72px)/4);
@@ -394,10 +391,6 @@ body {
     border-top-right-radius: 0px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
-}
-
-.card-caption-end {
-    margin-right: 0;
 }
 
 .name-card {
@@ -431,6 +424,7 @@ body {
     display: flex;
     gap: 24px;
     margin-bottom: 72px;
+    justify-content: center;
 }
 
 .modal-button-portfolio {
@@ -447,13 +441,12 @@ body {
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
+    border: 1px solid var(--butoon-color);
 }
 
 .modal-button-portfolio:hover,
 .modal-button-portfolio:focus {
-    border: 1px solid;
-    border-radius: 4px;
-    color: var(--text-btn-color);
+    border: 1px solid transparent;
     background: var(--accent-color);
 }
 
@@ -465,7 +458,7 @@ body {
 .picture {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24;
+    column-gap: 24px;
     row-gap: 48px;
 
 }
@@ -475,10 +468,17 @@ body {
 }
 
 .container-section {
-    padding-top: 32px;
-    padding-bottom: 16px;
+    padding: 32px, 16px;
     border: 1px solid var(--butoon-color);
     border-top: none;
+    color: var(--title-text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .avatar .link {
@@ -486,12 +486,12 @@ body {
 }
 
 .name-pic {
+    margin-bottom: 8px;
     color: var(--title-text-color);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.4px;
-    margin-bottom: 8px;
+    letter-spacing: 0.02em;
 
 }
 
@@ -535,6 +535,7 @@ body {
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .company-footer {
