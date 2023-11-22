@@ -1,3 +1,25 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 :root {
     --primari-tex-color: #434455;
     --title-text-color: #2E2F42;
@@ -15,8 +37,6 @@ body {
     color: #434455;
 }
 
-.logo.link {}
-
 .list {
     list-style: none;
 }
@@ -27,6 +47,23 @@ body {
 
 
 /* ====HEADER==== */
+
+.menu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 24px;
+    margin-right: 832px;
+    margin-bottom: 24px;
+    width: 44px;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
 .logo {
     color: var(--button-text-color);
     font-family: Raleway, sans-serif;
@@ -35,7 +72,12 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-
+    width: 44px;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 76px;
 }
 
 .logo:hover,
@@ -58,6 +100,26 @@ body {
     color: var(--accent-color);
 }
 
+.menu-item {
+    margin-top: 24px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+    margin-left: 76px;
+
+}
+
+.address-header {
+    width: 44px;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 24px;
+    margin-right: 156px;
+    margin-bottom: 24px;
+    margin-left: 940px;
+}
+
 .menu-link {
     color: var(--title-text-color);
     font-size: 16px;
@@ -69,6 +131,20 @@ body {
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
+}
+
+.menu-item {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-right: 832px;
+    margin-bottom: 24px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 /* ====ADDRESS=== */
@@ -102,11 +178,22 @@ body {
     font-style: normal;
 }
 
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 /* ====/ADDRESS=== */
 /* ====/HEADER==== */
 /* ====== SECTION 1 =====*/
 .section-hero {
     background-color: var(--title-text-color);
+
+
 }
 
 .main-page {
@@ -116,6 +203,7 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    width: 496px;
 }
 
 .modal-btn {
