@@ -392,10 +392,6 @@ body {
     border-top: none;
 }
 
-.picture-item {
-    width: calc((100%-48px)/3);
-}
-
 .section-body {
     padding-top: 96px;
     padding-bottom: 120px;
