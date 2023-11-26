@@ -509,7 +509,7 @@ body {
 }
 
 .logo-footer {
-    margin-bottom: 16px;
+    margin-top: 101.5px;
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway;
     font-size: 18px;
@@ -538,6 +538,9 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    width: 264px;
+    margin-bottom: 100px;
 }
+
 
 /* =====/FOOTER==== */
